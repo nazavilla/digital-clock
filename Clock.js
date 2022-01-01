@@ -11,14 +11,14 @@ function myTime(timestamp){
     let minute = now.getMinutes();
     let hour = now.getHours();
 
-    hora.innerHTML = `${hour}:`;
-    minuto.innerHTML = `${minute}:`;    
+    hora.innerHTML = hour +":";
+    minuto.innerHTML = minute+":";    
         if (minute < 10){
-        minuto.innerHTML = `0${minute}:`;    
+        minuto.innerHTML = "0"+minute;    
     }
-    segundo.innerHTML = `${second}`;
+    segundo.innerHTML = second;
         if (second < 10){
-        segundoHTML = `0${second}`;    
+        segundoHTML = "0"+second;    
     }
 
     console.log(timestamp);
